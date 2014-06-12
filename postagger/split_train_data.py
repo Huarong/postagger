@@ -4,6 +4,7 @@
 
 import util
 
+
 def split(path, small_path, large_path, parts=10):
     with open(path) as f:
         for index, line in enumerate(f):
@@ -29,10 +30,6 @@ def split(path, small_path, large_path, parts=10):
         with open(large_path, 'wb') as fl:
             fl.write(f.read())
     return None
-
-
-
-
 
 
 def main():
