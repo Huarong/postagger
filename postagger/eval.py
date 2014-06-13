@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
 
 import util
 
@@ -24,7 +25,8 @@ def evaluate(path):
 
 
 def main():
-    path = util.abs_path('data/origin_train_test.txt')
+    # path = util.abs_path('data/origin_train_test.txt')
+    path = sys.argv[1]
     evaluate(path)
     return None
 
