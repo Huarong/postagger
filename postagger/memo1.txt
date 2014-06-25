@@ -1,0 +1,21 @@
+iter:195
+Done51486.66 s
+
+crf_learn -f 4 -p 4 -c 1 template_3gram ../data/7_10_train.tag ../result/model7_10_f4c1_3gram
+crf_test -m ../result/model7_10_f4c1_3gram ../data/3_10_train.tag > ../result/3_10_f4c1_3gram.txt
+iter: 199
+58678.52 s
+
+
+crf_learn -f 4 -p 4 -c 1 template_4gram ../data/7_10_train.tag ../result/model7_10_f4c1_4gram
+crf_test -m ../result/model7_10_f4c1_4gram ../data/3_10_train.tag > ../result/3_10_f4c1_4gram.txt
+
+Number of sentences: 65466
+Number of features:  8671200
+Number of thread(s): 4
+Freq:                4
+eta:                 0.00010
+C:                   1.00000
+shrinking size:      20
+iter:219
+67695.92 s
